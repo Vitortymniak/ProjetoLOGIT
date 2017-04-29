@@ -1,0 +1,58 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets">
+    <h:head>
+        <title>LOGIT</title>
+        <h:outputStylesheet name="css/bootstrap.min.css" />
+        <h:outputStylesheet name="css/style.css" />
+        <h:outputScript name="js/jquery-3.2.0.min.js" />
+        <h:outputScript name="js/bootstrap.min.js" />
+    </h:head>
+    <h:body>
+        <nav class="navbar navbar-inverse">
+            <div class="container">
+                <!-- Brand and toggle get grouped for better mobile display -->
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <h:form id="linksFrm1">
+                        <a class="navbar-brand" href="/LOGIT/index.xhtml">LOGIT</a>
+                    </h:form>
+                </div>
+
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                    <h:form id="linksFrm2">
+                        <ul class="nav navbar-nav">
+                            <li><a href="/LOGIT/index.xhtml">Home</a></li>
+                            <li><h:commandLink action="/public/ferramentas.xhtml">Ferramentas</h:commandLink></li>
+                            <li><h:commandLink action="/public/pastilhas.xhtml">Pastilhas</h:commandLink></li>
+                            <li><h:commandLink action="/public/informacoes.xhtml">Informaçoes</h:commandLink></li>
+                            <li><h:commandLink action="/public/contato.xhtml">Contato</h:commandLink></li>
+                        </ul>
+                    </h:form>
+                </div><!-- /.navbar-collapse -->
+            </div><!-- /.container-fluid -->
+        </nav>
+        <div class="container-fluid">
+            <h:form>
+                <ui:insert name="corpo" />
+            </h:form>
+
+        </div><!-- /.container -->
+        <div class="container-fluid">
+            <div class="footer">
+                <center>
+                    LOGIT @ 2016 todos os direitos reservados
+                </center>
+            </div>
+        </div>
+    </h:body>
+</html>
+

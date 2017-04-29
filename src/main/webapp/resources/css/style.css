@@ -1,0 +1,25 @@
+.caption {
+    text-align: center;
+}
+.caption > p {
+    height: 36px;
+}
+.container-fluid {
+    padding: 0px;
+}
+nav.navbar.navbar-default {
+    margin-bottom: 0px;
+}
+h1.sobre {
+    margin-top: -85px;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: bolder;
+    margin-bottom: 60px;
+}
+.footer {
+    line-height: 40px;
+    height: 40px;
+    background-color: #f8f8f8;
+    border-top: 1px solid #e7e7e7;
+}
